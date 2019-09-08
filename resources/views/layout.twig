@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A skeleton for a simple PHP application built on Slim Framework 4.">
+    <meta name="author" content="N'Bayramberdiyev">
+    <title>{% block title %}{% endblock %} - Slim Framework 4 Starter Application</title>
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+</head>
+<body class="d-flex flex-column h-100">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="{{ url_for('home.index') }}">Slim Framework 4 Starter</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item{{ is_current_url('home.index') ? ' active' }}">
+                            <a class="nav-link" href="{{ url_for('home.index') }}">Home</a>
+                        </li>
+                        <li class="nav-item{{ is_current_url('about.index') ? ' active' }}">
+                            <a class="nav-link" href="{{ url_for('about.index') }}">About</a>
+                        </li>
+                        <li class="nav-item{{ is_current_url('contact.index') ? ' active' }}">
+                            <a class="nav-link" href="{{ url_for('contact.index') }}">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer class="footer bg-dark mt-auto py-3">
+        <div class="container">
+            <span class="text-muted">Copyright &copy; 2019. All rights reserved.</span>
+        </div>
+    </footer>
+    <script src="/assets/js/jquery-3.4.1.min.js"></script>
+    <script src="/assets/js/popper.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+</body>
+</html>
