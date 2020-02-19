@@ -11,5 +11,5 @@ $container = new Container;
 AppFactory::setContainer($container);
 
 $container->set('view', function() {
-    return new Twig('../resources/views', ['cache' => false]);
+    return Twig::create('../resources/views', ['cache' => false]);
 });
