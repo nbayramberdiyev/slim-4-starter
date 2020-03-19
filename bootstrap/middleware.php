@@ -8,8 +8,8 @@ use Zeuxisoo\Whoops\Slim\WhoopsMiddleware;
 
 $app->addRoutingMiddleware();
 
-$app->add(new WhoopsMiddleware);
-
 $app->add(TwigMiddleware::createFromContainer($app));
 
 $app->add(new Session);
+
+$app->add(new WhoopsMiddleware);

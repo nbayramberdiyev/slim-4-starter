@@ -16,7 +16,8 @@
         "slim/slim": "^4.4",
         "slim/psr7": "^1.0",
         "php-di/php-di": "^6.0",
-        "slim/twig-view": "^3.0"
+        "slim/twig-view": "^3.0",
+        "vlucas/phpdotenv": "^4.1"
     },
     "require-dev": {
         "symfony/var-dumper": "^5.0",
