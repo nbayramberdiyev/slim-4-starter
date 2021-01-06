@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "php": "^7.2",
+        "php": "^7.3",
         "ext-json": "*",
         "slim/slim": "^4.0",
         "slim/psr7": "^1.0",
