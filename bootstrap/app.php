@@ -14,7 +14,7 @@ Dotenv::createImmutable(dirname(__DIR__))->load();
 
 $app = AppFactory::create();
 
-require __DIR__ . '/container.php';
+(require __DIR__ . '/container.php')($container);
 
 (require __DIR__ . '/middleware.php')($app);
 
