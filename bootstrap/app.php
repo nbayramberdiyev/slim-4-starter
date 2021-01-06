@@ -18,4 +18,4 @@ require __DIR__ . '/container.php';
 
 require __DIR__ . '/middleware.php';
 
-require __DIR__ . '/../routes/web.php';
+(require __DIR__ . '/../routes/web.php')($app);
