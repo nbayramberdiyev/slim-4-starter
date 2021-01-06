@@ -9,7 +9,7 @@ use Psr\Http\Message\ResponseInterface as Response;
 
 class ContactController extends Controller
 {
-    public function index(Request $request, Response $response)
+    public function index(Request $request, Response $response): Response
     {
         return $this->view->render($response, 'contact/index.twig');
     }
