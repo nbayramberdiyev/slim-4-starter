@@ -13,26 +13,18 @@ use Psr\Container\ContainerInterface;
  */
 abstract class Controller
 {
-    /**
-     * @var ContainerInterface $container
-     */
-    protected $container;
+    public function __construct(
+        protected ContainerInterface $container
+    ) {}
 
     /**
-     * Base Controller constructor.
+     * Returns an entry of the container by its identifier if it exists.
      *
-     * @param ContainerInterface $container
-     */
-    public function __construct(ContainerInterface $container)
-    {
-        $this->container = $container;
-    }
-
-    /**
      * @param  mixed $property
-     * @return mixed|null
+     *
+     * @return mixed
      */
-    public function __get($property)
+    public function __get(string $property): mixed
     {
         if ($this->container->has($property)) {
             return $this->container->get($property);

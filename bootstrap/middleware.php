@@ -6,7 +6,7 @@ use Slim\Views\TwigMiddleware;
 use App\Middleware\Session;
 use Zeuxisoo\Whoops\Slim\WhoopsMiddleware;
 
-return function (Slim\App $app)
+return function (Slim\App $app): void
 {
     $app->addRoutingMiddleware();
 
