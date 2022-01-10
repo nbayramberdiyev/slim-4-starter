@@ -14,19 +14,25 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="{{ url_for('home.index') }}">Slim Framework 4 Starter</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbar">
                     <ul class="navbar-nav">
-                        <li class="nav-item{{ is_current_url('home.index') ? ' active' }}">
-                            <a class="nav-link" href="{{ url_for('home.index') }}">Home</a>
+                        <li class="nav-item">
+                            <a {{ is_current_url('home.index') ? 'class="nav-link active" aria-current="page"' : 'class="nav-link"' }} href="{{ url_for('home.index') }}">
+                                Home
+                            </a>
                         </li>
-                        <li class="nav-item{{ is_current_url('about.index') ? ' active' }}">
-                            <a class="nav-link" href="{{ url_for('about.index') }}">About</a>
+                        <li class="nav-item">
+                            <a {{ is_current_url('about.index') ? 'class="nav-link active" aria-current="page"' : 'class="nav-link"' }} href="{{ url_for('about.index') }}">
+                                About
+                            </a>
                         </li>
-                        <li class="nav-item{{ is_current_url('contact.index') ? ' active' }}">
-                            <a class="nav-link" href="{{ url_for('contact.index') }}">Contact</a>
+                        <li class="nav-item">
+                            <a {{ is_current_url('contact.index') ? 'class="nav-link active" aria-current="page"' : 'class="nav-link"' }} href="{{ url_for('contact.index') }}">
+                                Contact
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -41,8 +47,6 @@
             <span class="text-muted">Copyright &copy; {{ 'now' | date('Y') }}. All rights reserved.</span>
         </div>
     </footer>
-    <script src="/assets/js/jquery-3.5.1.min.js"></script>
-    <script src="/assets/js/popper.min.js"></script>
-    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 # Slim Framework 4 Starter Application
-A skeleton for a simple PHP application built on [Slim Framework 4](https://www.slimframework.com) (and [Bootstrap 4](https://getbootstrap.com)).
+A skeleton for a simple PHP application built on [Slim Framework 4](https://www.slimframework.com) (and [Bootstrap 5](https://getbootstrap.com)).
 
 ## Requirements
 * PHP 8.0 or newer
