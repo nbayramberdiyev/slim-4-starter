@@ -20,7 +20,7 @@ abstract class Controller
     /**
      * Returns an entry of the container by its identifier if it exists.
      *
-     * @param  mixed $property
+     * @param  string $property
      *
      * @return mixed
      */
