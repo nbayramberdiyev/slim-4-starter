@@ -35,6 +35,7 @@
         }
     },
     "scripts": {
+        "serve": "@php -S localhost:0 -t public",
         "test": "./vendor/bin/phpunit --testdox"
     },
     "config": {
