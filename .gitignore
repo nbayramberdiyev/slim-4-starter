@@ -4,3 +4,4 @@ vendor/
 composer.lock
 phpunit.xml
 .phpunit.result.cache
+phpstan.neo
