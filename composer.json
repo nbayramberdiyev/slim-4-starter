@@ -23,6 +23,7 @@
         "phpstan/phpstan": "^1.4",
         "phpunit/phpunit": "^9.5",
         "symfony/var-dumper": "^6.0",
+        "vimeo/psalm": "^4.18",
         "zeuxisoo/slim-whoops": "^0.7.3"
     },
     "autoload": {
@@ -36,7 +37,12 @@
         }
     },
     "scripts": {
+        "analyze": [
+            "@analyze:phpstan",
+            "@analyze:psalm"
+        ],
         "analyze:phpstan": "./vendor/bin/phpstan analyse --memory-limit 1G",
+        "analyze:psalm": "./vendor/bin/psalm",
         "serve": "@php -S localhost:0 -t public",
         "test": "./vendor/bin/phpunit --testdox"
     },
