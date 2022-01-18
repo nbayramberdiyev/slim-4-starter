@@ -1,8 +1,15 @@
 {
     "name": "nbayramberdiyev/slim-4-starter",
     "type": "project",
-    "description": "A skeleton for a simple PHP application built on Slim Framework 4.",
-    "keywords": ["slim","framework","slimframework","slimphp"],
+    "description": "An opinionated starter template for a simple PHP application built on Slim Framework 4.",
+    "keywords": [
+        "slim",
+        "slimframework",
+        "slimphp",
+        "skeleton",
+        "template",
+        "starter"
+    ],
     "authors": [
         {
             "name": "N'Bayramberdiyev",
