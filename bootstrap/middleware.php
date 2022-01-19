@@ -8,6 +8,8 @@ use Zeuxisoo\Whoops\Slim\WhoopsMiddleware;
 
 return function (Slim\App $app): void
 {
+    $app->addBodyParsingMiddleware();
+
     $app->addRoutingMiddleware();
 
     $app->add(TwigMiddleware::createFromContainer($app));
