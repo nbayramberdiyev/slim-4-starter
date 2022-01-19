@@ -43,6 +43,10 @@
             "Tests\\": "tests/"
         }
     },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
     "scripts": {
         "analyze": [
             "@analyze:phpstan",
@@ -53,8 +57,9 @@
         "serve": "@php -S localhost:0 -t public",
         "test": "./vendor/bin/phpunit --testdox"
     },
-    "config": {
-        "optimize-autoloader": true,
-        "sort-packages": true
+    "scripts-descriptions": {
+        "analyze": "Runs all static analysis checks.",
+        "analyze:phpstan": "Runs the PHPStan static analyzer.",
+        "analyze:psalm": "Runs the Psalm static analyzer."
     }
 }
