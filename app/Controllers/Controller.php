@@ -31,6 +31,8 @@ abstract class Controller
      */
     protected function render(Response $response, string $template, array $data = []): Response
     {
+        $response = $response->withHeader('Content-Type', 'text/html; charset=utf-8');
+
         return $this->twig->render($response, $template, $data);
     }
 }
