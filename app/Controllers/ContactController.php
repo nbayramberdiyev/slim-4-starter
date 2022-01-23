@@ -11,6 +11,6 @@ class ContactController extends Controller
 {
     public function index(Request $request, Response $response): Response
     {
-        return $this->view->render($response, 'contact/index.twig');
+        return $this->render($response, 'contact/index.twig');
     }
 }

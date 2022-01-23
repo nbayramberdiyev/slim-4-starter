@@ -4,32 +4,33 @@ declare(strict_types=1);
 
 namespace App\Controllers;
 
-use Psr\Container\ContainerInterface;
+use Psr\Http\Message\ResponseInterface as Response;
+use Slim\Views\Twig;
+use Twig\Error\LoaderError;
+use Twig\Error\RuntimeError;
+use Twig\Error\SyntaxError;
 
-/**
- * Base Controller class.
- *
- * @property \Slim\Views\Twig $view
- */
 abstract class Controller
 {
     public function __construct(
-        protected ContainerInterface $container
+        protected Twig $twig
     ) {}
 
     /**
-     * Returns an entry of the container by its identifier if it exists.
+     * Creates a rendered view response.
      *
-     * @param  string $property
+     * @param Response             $response
+     * @param string               $template
+     * @param array<string, mixed> $data
      *
-     * @return mixed
+     * @return Response
+     *
+     * @throws LoaderError
+     * @throws RuntimeError
+     * @throws SyntaxError
      */
-    public function __get(string $property): mixed
+    protected function render(Response $response, string $template, array $data = []): Response
     {
-        if ($this->container->has($property)) {
-            return $this->container->get($property);
-        }
-
-        return null;
+        return $this->twig->render($response, $template, $data);
     }
 }

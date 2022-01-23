@@ -2,8 +2,9 @@
 
 declare(strict_types=1);
 
-use Slim\Views\TwigMiddleware;
 use App\Middleware\StartSession;
+use Slim\Views\Twig;
+use Slim\Views\TwigMiddleware;
 use Zeuxisoo\Whoops\Slim\WhoopsMiddleware;
 
 return function (Slim\App $app): void
@@ -12,7 +13,7 @@ return function (Slim\App $app): void
 
     $app->addRoutingMiddleware();
 
-    $app->add(TwigMiddleware::createFromContainer($app));
+    $app->add(TwigMiddleware::createFromContainer($app, Twig::class));
 
     $app->add(new StartSession);
 
