@@ -15,7 +15,7 @@ return function (Slim\App $app): void
 
     $app->add(TwigMiddleware::createFromContainer($app, Twig::class));
 
-    $app->add(new StartSession);
+    $app->add(new StartSession());
 
-    $app->add(new WhoopsMiddleware);
+    $app->add(new WhoopsMiddleware());
 };
