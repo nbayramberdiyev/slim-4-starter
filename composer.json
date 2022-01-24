@@ -27,7 +27,9 @@
         "vlucas/phpdotenv": "^5.4"
     },
     "require-dev": {
+        "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan": "^1.4",
+        "phpstan/phpstan-phpunit": "^1.0",
         "phpunit/phpunit": "^9.5",
         "symfony/var-dumper": "^6.0",
         "vimeo/psalm": "^4.18",
