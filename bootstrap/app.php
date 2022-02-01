@@ -16,8 +16,6 @@ $app = AppFactory::create();
 
 (require __DIR__ . '/container.php')($container);
 
-(require __DIR__ . '/middleware.php')($app);
-
 (require __DIR__ . '/../routes/web.php')($app);
 
 return $app;
