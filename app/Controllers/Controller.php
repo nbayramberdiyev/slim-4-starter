@@ -14,7 +14,8 @@ abstract class Controller
 {
     public function __construct(
         protected Twig $twig
-    ) {}
+    ) {
+    }
 
     /**
      * Creates a rendered view response.

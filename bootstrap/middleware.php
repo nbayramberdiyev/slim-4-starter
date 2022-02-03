@@ -7,8 +7,7 @@ use Slim\Views\Twig;
 use Slim\Views\TwigMiddleware;
 use Zeuxisoo\Whoops\Slim\WhoopsMiddleware;
 
-return function (Slim\App $app): void
-{
+return function (Slim\App $app): void {
     $app->addBodyParsingMiddleware();
 
     $app->addRoutingMiddleware();
