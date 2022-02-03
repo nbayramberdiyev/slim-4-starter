@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="./vendor/squizlabs/php_codesniffer/phpcs.xsd">
+    <description>A coding standard for Slim Framework 4 Starter Application</description>
+
+    <file>app</file>
+    <file>bootstrap</file>
+    <file>routes</file>
+    <file>tests</file>
+
+    <arg name="colors"/>
+    <arg value="sp"/>
+
+    <!-- PSR-12 Rules -->
+    <rule ref="PSR12"/>
+
+    <!-- Force array element indentation with one tab stop. -->
+    <rule ref="Generic.Arrays.ArrayIndent"/>
+
+    <!-- Short array syntax must be used to define arrays. -->
+    <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
+
+    <!-- Control structures must have at least one statement inside of the body. -->
+    <rule ref="Generic.CodeAnalysis.EmptyStatement">
+        <!-- But allow empty `catch` statement. -->
+        <exclude name="Generic.CodeAnalysis.EmptyStatement.DetectedCatch"/>
+    </rule>
+
+    <!-- Methods should not be declared final inside of classes that are declared final. -->
+    <rule ref="Generic.CodeAnalysis.UnnecessaryFinalModifier"/>
+
+    <!-- Allow comments to run longer than 120 characters. -->
+    <rule ref="Generic.Files.LineLength">
+        <properties>
+            <property name="ignoreComments" value="true"/>
+        </properties>
+    </rule>
+
+    <!-- Exactly one space is allowed after a cast. -->
+    <rule ref="Generic.Formatting.SpaceAfterCast"/>
+
+    <!-- Constructors should be named `__construct`, not after the class. -->
+    <rule ref="Generic.NamingConventions.ConstructorName"/>
+
+    <!-- Disallow the use of the backtick operator for execution of shell commands. -->
+    <rule ref="Generic.PHP.BacktickOperator"/>
+
+    <!-- Deprecated functions should not be used. -->
+    <rule ref="Generic.PHP.DeprecatedFunctions"/>
+
+    <!-- Discourage the use of the PHP `goto` language construct. -->
+    <rule ref="Generic.PHP.DiscourageGoto"/>
+
+    <!-- The forbidden functions `sizeof()` and `delete()` should not be used. -->
+    <rule ref="Generic.PHP.ForbiddenFunctions"/>
+
+    <!-- The `PHP_SAPI` constant should be used instead of `php_sapi_name()`. -->
+    <rule ref="Generic.PHP.SAPIUsage"/>
+
+    <!-- Perl-style # comments are not allowed. -->
+    <rule ref="PEAR.Commenting.InlineComment"/>
+
+    <!-- When referencing arrays you should not put whitespace around the opening bracket or before the closing bracket. -->
+    <rule ref="Squiz.Arrays.ArrayBracketSpacing"/>
+
+    <!-- The file name and the name of the class contained within the file should match. -->
+    <rule ref="Squiz.Classes.ClassFileName"/>
+
+    <!-- The `self` keyword should be used instead of the current class name, should be lowercase, and should not have spaces before or after it. -->
+    <rule ref="Squiz.Classes.SelfMemberReference"/>
+
+    <!-- The logical operators `and` and `or` should not be used. -->
+    <rule ref="Squiz.Operators.ValidLogicalOperators"/>
+
+    <!-- The `global` keyword should not be used. -->
+    <rule ref="Squiz.PHP.GlobalKeyword"/>
+
+    <!-- Functions inside functions should not be used. -->
+    <rule ref="Squiz.PHP.InnerFunctions"/>
+
+    <!-- The PHP function calls should be in lowercase. -->
+    <rule ref="Squiz.PHP.LowercasePHPFunctions"/>
+
+    <!-- Warn about code that can never been executed. -->
+    <rule ref="Squiz.PHP.NonExecutableCode"/>
+
+    <!-- Static methods should not use `$this`. -->
+    <rule ref="Squiz.Scope.StaticThisUsage"/>
+
+    <!-- Do not allow double quotes for plain strings but allow them if they contain a variable. -->
+    <rule ref="Squiz.Strings.DoubleQuoteUsage.NotRequired"/>
+
+    <!-- The opening brace for functions should be on a new line with no blank lines surrounding it. -->
+    <rule ref="Squiz.WhiteSpace.FunctionOpeningBraceSpace"/>
+
+    <!-- 1 blank line required before and after functions/methods, except at the top and bottom. -->
+    <rule ref="Squiz.WhiteSpace.FunctionSpacing">
+        <properties>
+            <property name="spacing" value="1"/>
+            <property name="spacingBeforeFirst" value="0"/>
+            <property name="spacingAfterLast" value="0"/>
+        </properties>
+    </rule>
+
+    <!-- The PHP constructs `echo`, `print`, `return`, `include`, `include_once`, `require`, `require_once`, and `new` should have one space after them. -->
+    <rule ref="Squiz.WhiteSpace.LanguageConstructSpacing"/>
+
+    <!-- The object operator (`->`) should not have any space around it except a new line. -->
+    <rule ref="Squiz.WhiteSpace.ObjectOperatorSpacing">
+        <properties>
+            <property name="ignoreNewlines" value="true"/>
+        </properties>
+    </rule>
+
+    <!-- Semicolons should not have spaces before them. -->
+    <rule ref="Squiz.WhiteSpace.SemicolonSpacing"/>
+</ruleset>
