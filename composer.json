@@ -65,6 +65,10 @@
     "scripts-descriptions": {
         "analyze": "Runs all static analysis checks.",
         "analyze:phpstan": "Runs the PHPStan static analyzer.",
-        "analyze:psalm": "Runs the Psalm static analyzer."
+        "analyze:psalm": "Runs the Psalm static analyzer.",
+        "lint:fix": "Auto-fixes coding standards issues, if possible.",
+        "lint:style": "Checks for coding standards issues.",
+        "serve": "Starts PHP development web server on a random (unused) port.",
+        "test": "Runs unit tests."
     }
 }
