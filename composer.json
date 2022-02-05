@@ -57,6 +57,8 @@
         ],
         "analyze:phpstan": "./vendor/bin/phpstan analyse --memory-limit 1G",
         "analyze:psalm": "./vendor/bin/psalm",
+        "lint:fix": "./vendor/bin/phpcbf; if [ $? -eq 1 ]; then exit 0; fi",
+        "lint:style": "./vendor/bin/phpcs",
         "serve": "@php -S localhost:0 -t public",
         "test": "./vendor/bin/phpunit --testdox"
     },
