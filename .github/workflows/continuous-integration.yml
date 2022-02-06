@@ -1,0 +1,57 @@
+# GitHub Actions Documentation: https://docs.github.com/en/actions
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+# Cancels all previous workflow runs for the same branch that have not yet completed.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  coding-standards:
+    name: Coding Standards
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: latest
+          coverage: none
+
+      - name: Install Dependencies
+        uses: ramsey/composer-install@v2
+
+      - name: Check Coding Standards (PHP_CodeSniffer)
+        run: composer lint:style
+
+  static-analysis:
+    name: Static Analysis
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: latest
+          coverage: none
+
+      - name: Install Dependencies
+        uses: ramsey/composer-install@v2
+
+      - name: Statically Analize Code (PHPStan)
+        run: composer analyze:phpstan
+
+      - name: Statically Analize Code (Psalm)
+        run: composer analyze:psalm
