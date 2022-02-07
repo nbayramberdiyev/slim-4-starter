@@ -57,7 +57,7 @@ jobs:
         run: composer analyze:psalm
 
   unit-tests:
-    name: Unit Tests
+    name: Unit Tests (PHP ${{ matrix.php-version }}) on ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
 
     strategy:
