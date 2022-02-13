@@ -15,7 +15,7 @@ namespace App;
 function env(string $key, mixed $default = null): mixed
 {
     if (isset($_ENV[$key])) {
-        return match (strtolower($_ENV[$key])) {
+        return match (strtolower((string) $_ENV[$key])) {
             'true'  => true,
             'false' => false,
             'null'  => null,
