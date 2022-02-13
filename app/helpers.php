@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace App;
+
 /**
  * Gets the value of an environment variable.
  *
