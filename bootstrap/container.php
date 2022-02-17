@@ -11,8 +11,12 @@ return function (Di\Container $container): void {
     });
 
     $container->set(Twig::class, function (ContainerInterface $container) {
-        ['path' => $path, 'cache' => $cache] = $container->get('settings')['view'];
+        $settings = $container->get('settings');
+        $options = [
+            'debug' => $settings['app']['debug'],
+            'cache' => $settings['view']['cache'],
+        ];
 
-        return Twig::create($path, ['cache' => $cache]);
+        return Twig::create($settings['view']['path'], $options);
     });
 };
