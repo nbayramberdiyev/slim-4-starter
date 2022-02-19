@@ -14,12 +14,12 @@ namespace App;
  */
 function env(string $key, mixed $default = null): mixed
 {
-    if (isset($_ENV[$key])) {
-        return match (strtolower((string) $_ENV[$key])) {
+    if (isset($_SERVER[$key])) {
+        return match (strtolower((string) $_SERVER[$key])) {
             'true'  => true,
             'false' => false,
             'null'  => null,
-            default => $_ENV[$key],
+            default => $_SERVER[$key],
         };
     }
 
