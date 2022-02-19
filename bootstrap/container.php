@@ -2,15 +2,16 @@
 
 declare(strict_types=1);
 
+use DI\ContainerBuilder;
 use Psr\Container\ContainerInterface;
 use Slim\Views\Twig;
 
-return function (Di\Container $container): void {
-    $container->set('settings', function () {
+$definitions = [
+    'settings' => function () {
         return require 'settings.php';
-    });
+    },
 
-    $container->set(Twig::class, function (ContainerInterface $container) {
+    Twig::class => function (ContainerInterface $container) {
         $settings = $container->get('settings');
         $options = [
             'debug' => $settings['app']['debug'],
@@ -18,5 +19,7 @@ return function (Di\Container $container): void {
         ];
 
         return Twig::create($settings['view']['path'], $options);
-    });
-};
+    },
+];
+
+return (new ContainerBuilder())->addDefinitions($definitions)->build();
