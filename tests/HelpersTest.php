@@ -28,7 +28,7 @@ final class HelpersTest extends TestCase
         $this->assertEmpty(env('foo'));
     }
 
-    public function testEnvWithDefault()
+    public function testEnvWithDefault(): void
     {
         $_SERVER['foo'] = 'bar';
         $this->assertSame('bar', env('foo', 'default'));
