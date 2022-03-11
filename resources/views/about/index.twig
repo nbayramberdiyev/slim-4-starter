@@ -1,12 +1,12 @@
 {% extends 'layout.twig' %}
 
-{% block title %}About{% endblock %}
+{% block title %}{% trans %}About{% endtrans %}{% endblock %}
 
 {% block content %}
     <div class="p-5 rounded-3 bg-light text-center">
         <div class="container-fluid">
-            <h1 class="display-5 fw-bold">About</h1>
-            <p class="lead">This is an example page.</p>
+            <h1 class="display-5 fw-bold">{% trans %}About{% endtrans %}</h1>
+            <p class="lead">{% trans %}This is an example page.{% endtrans %}</p>
             <code>resources/views/about/index.twig</code>
         </div>
     </div>

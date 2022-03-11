@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="h-100">
+<html lang="{{ locale }}" class="h-100">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,17 +21,17 @@
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a {{ is_current_url('home.index') ? 'class="nav-link active" aria-current="page"' : 'class="nav-link"' }} href="{{ url_for('home.index') }}">
-                                Home
+                                {% trans %}Home{% endtrans %}
                             </a>
                         </li>
                         <li class="nav-item">
                             <a {{ is_current_url('about.index') ? 'class="nav-link active" aria-current="page"' : 'class="nav-link"' }} href="{{ url_for('about.index') }}">
-                                About
+                                {% trans %}About{% endtrans %}
                             </a>
                         </li>
                         <li class="nav-item">
                             <a {{ is_current_url('contact.index') ? 'class="nav-link active" aria-current="page"' : 'class="nav-link"' }} href="{{ url_for('contact.index') }}">
-                                Contact
+                                {% trans %}Contact{% endtrans %}
                             </a>
                         </li>
                     </ul>
@@ -44,7 +44,7 @@
     </main>
     <footer class="footer bg-dark mt-auto py-3">
         <div class="container">
-            <span class="text-muted">&copy; {{ 'now' | date('Y') }}. All rights reserved.</span>
+            <span class="text-muted">&copy; {{ 'now' | date('Y') }}. {% trans %}All rights reserved.{% endtrans %}</span>
         </div>
     </footer>
     <script src="/assets/js/bootstrap.bundle.min.js"></script>
