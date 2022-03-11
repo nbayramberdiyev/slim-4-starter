@@ -56,21 +56,21 @@
         }
     },
     "scripts": {
-        "analyze": [
-            "@analyze:phpstan",
-            "@analyze:psalm"
+        "analyse": [
+            "@analyse:phpstan",
+            "@analyse:psalm"
         ],
-        "analyze:phpstan": "./vendor/bin/phpstan analyse --memory-limit 1G",
-        "analyze:psalm": "./vendor/bin/psalm",
+        "analyse:phpstan": "./vendor/bin/phpstan analyse --memory-limit 1G",
+        "analyse:psalm": "./vendor/bin/psalm",
         "lint:fix": "./vendor/bin/phpcbf; if [ $? -eq 1 ]; then exit 0; fi",
         "lint:style": "./vendor/bin/phpcs",
         "serve": "@php -S localhost:0 -t public",
         "test": "./vendor/bin/phpunit --testdox"
     },
     "scripts-descriptions": {
-        "analyze": "Runs all static analysis checks.",
-        "analyze:phpstan": "Runs the PHPStan static analyzer.",
-        "analyze:psalm": "Runs the Psalm static analyzer.",
+        "analyse": "Runs all static analysis checks.",
+        "analyse:phpstan": "Runs the PHPStan static analyser.",
+        "analyse:psalm": "Runs the Psalm static analyser.",
         "lint:fix": "Auto-fixes coding standards issues, if possible.",
         "lint:style": "Checks for coding standards issues.",
         "serve": "Starts PHP development web server on a random (unused) port.",

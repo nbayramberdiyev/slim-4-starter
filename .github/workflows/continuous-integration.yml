@@ -50,11 +50,11 @@ jobs:
       - name: Install Dependencies
         uses: ramsey/composer-install@v2
 
-      - name: Statically Analize Code (PHPStan)
-        run: composer analyze:phpstan
+      - name: Statically Analyse Code (PHPStan)
+        run: composer analyse:phpstan
 
-      - name: Statically Analize Code (Psalm)
-        run: composer analyze:psalm
+      - name: Statically Analyse Code (Psalm)
+        run: composer analyse:psalm
 
   unit-tests:
     name: Unit Tests (PHP ${{ matrix.php-version }}) on ${{ matrix.os }}
