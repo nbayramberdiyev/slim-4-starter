@@ -19,7 +19,7 @@ jobs:
     name: Coding Standards
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Setup PHP
@@ -28,17 +28,17 @@ jobs:
           php-version: latest
           coverage: none
 
-      - name: Install Dependencies
+      - name: Install dependencies
         uses: ramsey/composer-install@v2
 
-      - name: Check Coding Standards (PHP_CodeSniffer)
+      - name: Check coding standards (PHP_CodeSniffer)
         run: composer lint:style
 
   static-analysis:
     name: Static Analysis
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Setup PHP
@@ -47,13 +47,13 @@ jobs:
           php-version: latest
           coverage: none
 
-      - name: Install Dependencies
+      - name: Install dependencies
         uses: ramsey/composer-install@v2
 
-      - name: Statically Analyse Code (PHPStan)
+      - name: Statically analyse code (PHPStan)
         run: composer analyse:phpstan
 
-      - name: Statically Analyse Code (Psalm)
+      - name: Statically analyse code (Psalm)
         run: composer analyse:psalm
 
   unit-tests:
@@ -68,7 +68,7 @@ jobs:
         dependencies: [lowest, highest]
 
     steps:
-      - name: Checkout Repository
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Setup PHP
@@ -77,10 +77,10 @@ jobs:
           php-version: ${{ matrix.php-version }}
           coverage: none
 
-      - name: Install Dependencies
+      - name: Install dependencies
         uses: ramsey/composer-install@v2
         with:
           dependency-versions: ${{ matrix.dependencies }}
 
-      - name: Run Unit Tests (PHPUnit)
+      - name: Run unit tests (PHPUnit)
         run: composer test
