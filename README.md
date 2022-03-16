@@ -2,6 +2,8 @@
 
 An opinionated starter template for a simple PHP application built on [Slim Framework 4](https://www.slimframework.com) (and [Bootstrap 5](https://getbootstrap.com)).
 
+![CI](https://github.com/nbayramberdiyev/slim-4-starter/actions/workflows/continuous-integration.yml/badge.svg)
+
 ## Features
 
 - 📥 Autoloader ([PSR-4](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md))
@@ -30,8 +32,8 @@ An opinionated starter template for a simple PHP application built on [Slim Fram
 
 ## Requirements
 
-* [PHP](https://www.php.net) 8.0 or newer
-* [Composer](https://getcomposer.org)
+- [PHP](https://www.php.net) 8.0 or newer
+- [Composer](https://getcomposer.org)
 
 ## Installation
 
