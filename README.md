@@ -8,6 +8,8 @@
   </a>
 </div>
 
+<br />
+
 <p align="center">
   <a href="#features">Features</a> •
   <a href="#requirements">Requirements</a> •
