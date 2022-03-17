@@ -2,13 +2,11 @@
 
 <p align="center">An opinionated starter template for a simple PHP application built on <a href="https://www.slimframework.com" target="_blank">Slim Framework 4</a> (and <a href="https://getbootstrap.com" target="_blank">Bootstrap 5</a>).</p>
 
-<div align="center">
+<p align="center">
   <a href="https://github.com/nbayramberdiyev/slim-4-starter/actions/workflows/continuous-integration.yml/badge.svg" target="_blank">
     <img src="https://github.com/nbayramberdiyev/slim-4-starter/actions/workflows/continuous-integration.yml/badge.svg" alt="CI" />
   </a>
-</div>
-
-<br />
+</p>
 
 <p align="center">
   <a href="#features">Features</a> •
