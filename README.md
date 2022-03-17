@@ -1,8 +1,18 @@
-# Slim 4 Starter Template
+<h1 align="center">Slim 4 Starter Template</h1>
 
-An opinionated starter template for a simple PHP application built on [Slim Framework 4](https://www.slimframework.com) (and [Bootstrap 5](https://getbootstrap.com)).
+<p align="center">An opinionated starter template for a simple PHP application built on <a href="https://www.slimframework.com" target="_blank">Slim Framework 4</a> (and <a href="https://getbootstrap.com" target="_blank">Bootstrap 5</a>).</p>
 
-![CI](https://github.com/nbayramberdiyev/slim-4-starter/actions/workflows/continuous-integration.yml/badge.svg)
+<div align="center">
+  <a href="https://github.com/nbayramberdiyev/slim-4-starter/actions/workflows/continuous-integration.yml/badge.svg" target="_blank">
+    <img src="https://github.com/nbayramberdiyev/slim-4-starter/actions/workflows/continuous-integration.yml/badge.svg" alt="CI" />
+  </a>
+</div>
+
+<p align="center">
+  <a href="#features">Features</a> •
+  <a href="#requirements">Requirements</a> •
+  <a href="#installation">Installation</a>
+</p>
 
 ## Features
 
