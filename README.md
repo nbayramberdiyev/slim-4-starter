@@ -16,7 +16,7 @@
 
 ## Features
 
-- 📥 Autoloader ([PSR-4](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md))
+- :inbox_tray: Autoloader ([PSR-4](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md))
 
 - 📨 HTTP message interfaces with [Slim-Psr7](https://github.com/slimphp/Slim-Psr7) ([PSR-7](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-7-http-message.md))
 
