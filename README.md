@@ -32,13 +32,13 @@
 
 - :package: Dependency injection container with [PHP-DI](https://github.com/php-di/php-di) ([PSR-11](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-11-container.md))
 
-- 🧪 Unit testing with [PHPUnit](https://github.com/sebastianbergmann/phpunit)
+- :test_tube: Unit testing with [PHPUnit](https://github.com/sebastianbergmann/phpunit)
 
-- 🔍 Static code analysis with [PHPStan](https://github.com/phpstan/phpstan) and [Psalm](https://github.com/vimeo/psalm)
+- :mag: Static code analysis with [PHPStan](https://github.com/phpstan/phpstan) and [Psalm](https://github.com/vimeo/psalm)
 
-- 🔭 Coding standards checking with [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) ([PSR-12](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-12-extended-coding-style-guide.md))
+- :telescope: Coding standards checking with [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) ([PSR-12](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-12-extended-coding-style-guide.md))
 
-- 🛠 CI workflows with [GitHub Actions](https://docs.github.com/en/actions)
+- :hammer_and_wrench: CI workflows with [GitHub Actions](https://docs.github.com/en/actions)
 
 ## Requirements
 
