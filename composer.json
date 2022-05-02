@@ -35,7 +35,7 @@
         "spatie/ignition": "^1.2",
         "squizlabs/php_codesniffer": "^3.6",
         "symfony/var-dumper": "^6.0",
-        "vimeo/psalm": "^4.22"
+        "vimeo/psalm": "^4.23"
     },
     "autoload": {
         "psr-4": {
