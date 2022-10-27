@@ -14,14 +14,18 @@ namespace App;
  */
 function env(string $key, mixed $default = null): mixed
 {
-    if (isset($_SERVER[$key])) {
-        return match (strtolower((string) $_SERVER[$key])) {
-            'true'  => true,
-            'false' => false,
-            'null'  => null,
-            default => $_SERVER[$key],
-        };
+    if (! array_key_exists($key, $_SERVER)) {
+        return $default;
     }
 
-    return $default;
+    if (is_array($_SERVER[$key]) || is_object($_SERVER[$key])) {
+        return $_SERVER[$key];
+    }
+
+    return match (strtolower((string) $_SERVER[$key])) {
+        'true'  => true,
+        'false' => false,
+        'null'  => null,
+        default => $_SERVER[$key],
+    };
 }
