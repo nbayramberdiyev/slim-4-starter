@@ -21,7 +21,7 @@
         "ext-json": "*",
         "php-di/php-di": "^6.4",
         "slim/psr7": "^1.6",
-        "slim/slim": "^4.10",
+        "slim/slim": "^4.11",
         "slim/twig-view": "^3.3",
         "symfony/translation": "^6.0",
         "symfony/twig-bridge": "^6.0",
