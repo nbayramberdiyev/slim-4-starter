@@ -20,7 +20,7 @@
         "php": "^8.0",
         "ext-json": "*",
         "php-di/php-di": "^6.4",
-        "slim/psr7": "^1.5",
+        "slim/psr7": "^1.6",
         "slim/slim": "^4.10",
         "slim/twig-view": "^3.3",
         "symfony/translation": "^6.0",
