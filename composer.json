@@ -29,7 +29,7 @@
     },
     "require-dev": {
         "phpstan/extension-installer": "^1.2",
-        "phpstan/phpstan": "^1.8",
+        "phpstan/phpstan": "^1.9",
         "phpstan/phpstan-phpunit": "^1.2",
         "phpunit/phpunit": "^9.5",
         "spatie/ignition": "^1.4",
