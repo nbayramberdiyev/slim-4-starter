@@ -10,11 +10,11 @@ use Symfony\Component\Translation\Loader\JsonFileLoader;
 use Symfony\Component\Translation\Translator;
 
 $definitions = [
-    'settings' => function () {
+    'settings' => function (): array {
         return require 'settings.php';
     },
 
-    Translator::class => function (ContainerInterface $container) {
+    Translator::class => function (ContainerInterface $container): Translator {
         $locale = $_SESSION['locale'] ?? $container->get('settings')['app']['locale'];
         $translator = new Translator($locale);
         $translator->addLoader('json', new JsonFileLoader());
@@ -26,7 +26,7 @@ $definitions = [
         return $translator;
     },
 
-    Twig::class => function (ContainerInterface $container) {
+    Twig::class => function (ContainerInterface $container): Twig {
         $settings = $container->get('settings');
         $options = [
             'debug' => $settings['app']['debug'],
