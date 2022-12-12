@@ -7,8 +7,8 @@ namespace App;
 /**
  * Gets the value of an environment variable.
  *
- * @param  string $key
- * @param  mixed  $default
+ * @param  non-empty-string $key
+ * @param  mixed            $default
  *
  * @return mixed
  */
