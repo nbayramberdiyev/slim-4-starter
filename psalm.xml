@@ -8,6 +8,7 @@
 >
     <projectFiles>
         <directory name="app" />
+        <directory name="bootstrap" />
         <ignoreFiles>
             <directory name="tests"/>
             <directory name="vendor" />
