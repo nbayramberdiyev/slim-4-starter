@@ -2,4 +2,5 @@ parameters:
     level: max
     paths:
         - app
+        - bootstrap
         - tests

@@ -15,7 +15,12 @@ $definitions = [
     },
 
     Translator::class => function (ContainerInterface $container): Translator {
-        $locale = $_SESSION['locale'] ?? $container->get('settings')['app']['locale'];
+        /** @var array<string, array<string, mixed>> $settings */
+        $settings = $container->get('settings');
+
+        /** @var string $locale */
+        $locale = $_SESSION['locale'] ?? $settings['app']['locale'];
+
         $translator = new Translator($locale);
         $translator->addLoader('json', new JsonFileLoader());
 
@@ -27,13 +32,20 @@ $definitions = [
     },
 
     Twig::class => function (ContainerInterface $container): Twig {
+        /** @var array<string, array<string, mixed>> $settings */
         $settings = $container->get('settings');
+
         $options = [
             'debug' => $settings['app']['debug'],
             'cache' => $settings['view']['cache'],
         ];
 
-        $twig = Twig::create($settings['view']['path'], $options);
+        /** @var string $path */
+        $path = $settings['view']['path'];
+
+        $twig = Twig::create($path, $options);
+
+        /** @var Translator $translator */
         $translator = $container->get(Translator::class);
 
         $twig->getEnvironment()->addGlobal('locale', $translator->getLocale());
