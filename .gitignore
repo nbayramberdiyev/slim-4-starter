@@ -1,9 +1,9 @@
 .idea/
+.phpunit.cache/
 .vscode/
 vendor/
 .DS_Store
 .env
-.phpunit.result.cache
 phpunit.xml
 phpstan.neon
 composer.lock
