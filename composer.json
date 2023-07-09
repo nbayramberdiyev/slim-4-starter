@@ -24,7 +24,7 @@
         "slim/slim": "^4.11",
         "slim/twig-view": "^3.3",
         "symfony/translation": "^6.2",
-        "symfony/twig-bridge": "^6.2",
+        "symfony/twig-bridge": "^6.3",
         "vlucas/phpdotenv": "^5.5"
     },
     "require-dev": {
