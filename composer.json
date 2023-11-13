@@ -25,7 +25,7 @@
         "slim/twig-view": "^3.3",
         "symfony/translation": "^6.3",
         "symfony/twig-bridge": "^6.3",
-        "vlucas/phpdotenv": "^5.5"
+        "vlucas/phpdotenv": "^5.6"
     },
     "require-dev": {
         "phpstan/extension-installer": "^1.3",
