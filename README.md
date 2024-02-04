@@ -42,7 +42,7 @@
 
 ## Requirements
 
-- [PHP](https://www.php.net) 8.1 or newer
+- [PHP](https://www.php.net) 8.2 or newer
 - [Composer](https://getcomposer.org)
 
 ## Installation
