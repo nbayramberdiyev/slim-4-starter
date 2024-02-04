@@ -63,7 +63,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        php-version: [8.1, 8.2]
+        php-version: [8.2, 8.3]
         os: [ubuntu-latest, macos-latest, windows-latest]
         dependencies: [lowest, highest]
 
