@@ -3,11 +3,17 @@
 {% block title %}{% trans %}Contact{% endtrans %}{% endblock %}
 
 {% block content %}
-    <div class="p-5 rounded-3 bg-light text-center">
-        <div class="container-fluid">
-            <h1 class="display-5 fw-bold">{% trans %}Contact{% endtrans %}</h1>
-            <p class="lead">{% trans %}This is an example page.{% endtrans %}</p>
-            <code>resources/views/contact/index.twig</code>
+    <div class="py-24 sm:py-32">
+        <div class="text-center space-y-2">
+            <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+                {% trans %}Contact{% endtrans %}
+            </h1>
+            <p class="text-base leading-7 text-gray-600">
+                {% trans %}This is an example page.{% endtrans %}
+            </p>
+            <p class="text-indigo-600">
+                <code>resources/views/contact/index.twig</code>
+            </p>
         </div>
     </div>
 {% endblock %}
