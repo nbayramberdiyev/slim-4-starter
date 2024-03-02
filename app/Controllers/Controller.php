@@ -10,6 +10,8 @@ use Twig\Error\LoaderError;
 use Twig\Error\RuntimeError;
 use Twig\Error\SyntaxError;
 
+use function json_encode;
+
 abstract class Controller
 {
     public function __construct(
