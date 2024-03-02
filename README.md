@@ -1,6 +1,6 @@
 <h1 align="center">Slim 4 Starter Template</h1>
 
-<p align="center">An opinionated starter template for a simple PHP application built on <a href="https://www.slimframework.com" target="_blank">Slim Framework 4</a> (and <a href="https://getbootstrap.com" target="_blank">Bootstrap 5</a>).</p>
+<p align="center">An opinionated starter template for a simple PHP application built on <a href="https://www.slimframework.com" target="_blank">Slim Framework 4</a> (and Tailwind CSS & Alpine.js).</p>
 
 <p align="center">
   <a href="https://github.com/nbayramberdiyev/slim-4-starter/actions/workflows/continuous-integration.yml/badge.svg" target="_blank">
