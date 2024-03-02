@@ -1,6 +1,7 @@
 .idea/
 .phpunit.cache/
 .vscode/
+node_modules/
 vendor/
 .DS_Store
 .env
