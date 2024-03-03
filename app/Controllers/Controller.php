@@ -22,11 +22,7 @@ abstract class Controller
     /**
      * Creates a rendered view response.
      *
-     * @param Response             $response
-     * @param string               $template
      * @param array<string, mixed> $data
-     *
-     * @return Response
      *
      * @throws LoaderError
      * @throws RuntimeError
@@ -41,13 +37,6 @@ abstract class Controller
 
     /**
      * Creates a JSON response.
-     *
-     * @param Response $response
-     * @param mixed    $data
-     * @param int      $status
-     * @param int      $flags
-     *
-     * @return Response
      */
     protected function json(Response $response, mixed $data, int $status = 200, int $flags = 0): Response
     {
@@ -58,12 +47,6 @@ abstract class Controller
 
     /**
      * Creates a redirect response.
-     *
-     * @param Response $response
-     * @param string   $url
-     * @param int      $status
-     *
-     * @return Response
      */
     protected function redirect(Response $response, string $url, int $status = 302): Response
     {
