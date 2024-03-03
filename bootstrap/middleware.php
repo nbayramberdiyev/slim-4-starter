@@ -6,7 +6,7 @@ use App\Middleware\StartSession;
 use Slim\Views\Twig;
 use Slim\Views\TwigMiddleware;
 
-return function (Slim\App $app): void {
+return static function (Slim\App $app): void {
     $app->addBodyParsingMiddleware();
 
     $app->addRoutingMiddleware();
