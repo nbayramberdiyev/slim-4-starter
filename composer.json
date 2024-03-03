@@ -64,8 +64,8 @@
         ],
         "analyse:phpstan": "./vendor/bin/phpstan analyse --memory-limit 1G",
         "analyse:psalm": "./vendor/bin/psalm",
-        "lint:fix": "./vendor/bin/phpcbf; if [ $? -eq 1 ]; then exit 0; fi",
-        "lint:style": "./vendor/bin/phpcs",
+        "lint:fix": "./vendor/bin/php-cs-fixer fix -vvv",
+        "lint:style": "./vendor/bin/php-cs-fixer fix --dry-run -vvv",
         "serve": [
             "Composer\\Config::disableProcessTimeout",
             "@php -S localhost:0 -t public"
