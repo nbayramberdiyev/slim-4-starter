@@ -26,6 +26,7 @@ return (new PhpCsFixer\Config())
         'clean_namespace' => true,
         'concat_space' => ['spacing' => 'one'],
         'declare_parentheses' => true,
+        'fully_qualified_strict_types' => true,
         'function_to_constant' => true,
         'general_phpdoc_tag_rename' => true,
         'include' => true,
