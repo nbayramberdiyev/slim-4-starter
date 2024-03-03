@@ -2,7 +2,13 @@
 
 declare(strict_types=1);
 
-$finder = (new PhpCsFixer\Finder())->in(['app', 'bootstrap', 'routes', 'tests']);
+$finder = (new PhpCsFixer\Finder())->in([
+    'app',
+    'bootstrap',
+    'public',
+    'routes',
+    'tests',
+]);
 
 return (new PhpCsFixer\Config())
     ->setRules([
