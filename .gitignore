@@ -5,6 +5,7 @@ node_modules/
 vendor/
 .DS_Store
 .env
+.php-cs-fixer.cache
 phpunit.xml
 phpstan.neon
 composer.lock
