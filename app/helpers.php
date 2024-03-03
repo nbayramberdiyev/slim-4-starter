@@ -7,14 +7,11 @@ namespace App;
 /**
  * Gets the value of an environment variable.
  *
- * @param  non-empty-string $key
- * @param  mixed            $default
- *
- * @return mixed
+ * @param non-empty-string $key
  */
 function env(string $key, mixed $default = null): mixed
 {
-    if (! isset($_SERVER[$key])) {
+    if (!isset($_SERVER[$key])) {
         return $default;
     }
 
