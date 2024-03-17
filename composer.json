@@ -35,7 +35,7 @@
         "phpunit/phpunit": "^10.5",
         "spatie/ignition": "^1.12",
         "symfony/var-dumper": "^7.0",
-        "vimeo/psalm": "^5.22"
+        "vimeo/psalm": "^5.23"
     },
     "autoload": {
         "psr-4": {
