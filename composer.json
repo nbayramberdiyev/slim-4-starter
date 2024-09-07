@@ -30,7 +30,7 @@
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.62",
         "phpstan/extension-installer": "^1.4",
-        "phpstan/phpstan": "^1.11",
+        "phpstan/phpstan": "^1.12",
         "phpstan/phpstan-phpunit": "^1.4",
         "phpunit/phpunit": "^10.5",
         "spatie/ignition": "^1.15",
