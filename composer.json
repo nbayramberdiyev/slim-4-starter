@@ -23,7 +23,7 @@
         "slim/psr7": "^1.7",
         "slim/slim": "^4.14",
         "slim/twig-view": "^3.4",
-        "symfony/translation": "^7.1",
+        "symfony/translation": "^7.2",
         "symfony/twig-bridge": "^7.1",
         "vlucas/phpdotenv": "^5.6"
     },
