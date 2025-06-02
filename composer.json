@@ -34,7 +34,7 @@
         "phpstan/phpstan-phpunit": "^1.4",
         "phpunit/phpunit": "^10.5",
         "spatie/ignition": "^1.15",
-        "symfony/var-dumper": "^7.2",
+        "symfony/var-dumper": "^7.3",
         "vimeo/psalm": "^5.26"
     },
     "autoload": {
