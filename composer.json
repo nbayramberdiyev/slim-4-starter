@@ -33,7 +33,7 @@
         "phpstan/phpstan": "^1.12",
         "phpstan/phpstan-phpunit": "^1.4",
         "phpunit/phpunit": "^10.5",
-        "spatie/ignition": "^1.15",
+        "spatie/ignition": "^1.16",
         "symfony/var-dumper": "^7.3",
         "vimeo/psalm": "^5.26"
     },
